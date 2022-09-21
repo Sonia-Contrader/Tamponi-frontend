@@ -13,6 +13,7 @@ import { WorkInProgressComponent } from './work-in-progress/work-in-progress.com
  * @author Vittorio Valent
  * 
  * @see AdminRoutingModule
+
  */
 @NgModule({
   declarations: [AdminDashboardComponent, UsersComponent, WorkInProgressComponent],
