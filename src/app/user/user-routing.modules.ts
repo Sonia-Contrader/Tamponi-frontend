@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UserLayoutComponent } from '../layout/user-layout/user-layout.components'; 
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component'; 
-//import { UsersComponent } from './users/users.component';
-//import { WorkInProgressComponent } from './work-in-progress/work-in-progress.component';
+
+
 
 /**
  * Modulo di routing dell'admin. Qui ci sono i percorsi che un admin può seguire:
