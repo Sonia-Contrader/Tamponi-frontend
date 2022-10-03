@@ -6,7 +6,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 
 
 /**
- * Modulo di routing dell'admin. Qui ci sono i percorsi che un admin può seguire:
+ * Modulo di routing dello user. Qui ci sono i percorsi che un admin può seguire:
  * appena fa il login viene caricato nel <router-outlet> di app-component il layout e nel 
  * <router-outlet> del layout (come percorsi "children") vengono visualizzati gli altri 
  * (qui sotto sono indentati).
