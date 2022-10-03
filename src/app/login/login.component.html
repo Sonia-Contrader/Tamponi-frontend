@@ -1,20 +1,30 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="../../assets/logo.svg" alt="logo">
-    </div>
-    <div class="col-md-5">
-      <form #f="ngForm">
-        <p>Please insert username and password to Login or Sign Up</p>
-        <div class="form-group">
-          <input class="form-control" type="text" id="user" name="username" placeholder="Username" ngModel>
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="password" id="pass" name="password" placeholder="Password" ngModel>
-        </div>
-        <button type="submit" (click)="login(f)">Login</button>
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
+<div class="modal d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-5 shadow py-5" id="Login">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <img src="../../assets/image001.png">
+      </div>
+      <div class="modal-header p-5 pb-4 border-bottom-0"> 
+        <h1 class="fw-bold mb-2">Prenotazione tamponi</h1>
+      </div>
+      <div class="modal-header border-bottom-0" id="usertype"> 
+        <h3><button type="submit" class="w-100 mb-2 btn btn-lg rounded-3">User</button></h3>
+        <h3><button type="submit" class="w-100 mb-2 btn btn-lg rounded-3">Admin</button></h3>
+      </div>
+    
+
+      <div class="modal-body p-5 pt-4 pl-4">
+        <form #f="ngForm">
+          <div class="form-group">
+            <input class="form-control" type="text" id="user" name="username"  placeholder="Username" required = "true" ngModel required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="password" id="pass" name="password"  placeholder="Password"  required = "true" ngModel required>
+          </div>
+          <button class= "w-100 mb-2 btn btn-lg rounded-3" type="submit" (click)="login(f)" id="bottone">Login</button>
+          <button class= "w-100 mb-2 btn btn-lg rounded-3" type="submit" (click)="registrati" id="bottone">Registrati</button>
+        </form>
+        
+      </div>
   </div>
 </div>

@@ -1,53 +1,80 @@
 form{
-    margin-top:270px;
-    width: 55%;
+    margin-top:30px;
+    width: 80%;
+    float:left;
     padding: 10px;
+    margin-left: 11%;
     border-radius:0;
-    border-color: crimson;
+    /*border-color: #f85d5d;*/
 }
 
+
 img{
-    position: inherit;
-    width:50%;
-    margin: 12%;
+    position: center;
+    width: 75%;
+   
 }
+
+p{
+    margin-left: 15%;
+}
+
 
 input, input:hover, input::selection, input:checked, input:focus{
     border: 0;
-    background-color: darkorange;
-    border-radius: 0;
-    color: white;
-    border-bottom: 1px solid crimson;
+    background-color: ADD8E6;
+    border-radius: 3;
+    color: black;
+    border-bottom: 5px solid whitesmoke;
     margin: 0px; 
 }
 
-.container-fluid{
-    background-color: darkorange;
-    height: 100vh;
-}
 input::placeholder{
-    color: white;
+    color: black;
 }
+
 .form-control{
 border: none;
-background-color: darkorange;
+background-color: whitesmoke;
 color: white;
 border-bottom: 1px solid white;
 }
 
 .login{
 border: none;
-background-color: darkorange;
+background-color: red;
 color: white;
 border: 1px solid white;
-border-radius: 2px;
-padding-top: 10px;
+border-radius: 7px;
+padding-top: 90px;
 padding-right: auto;
 padding-bottom: 10px;
 padding-left: auto;
 }
 
 p{
-font-size: 14px;
-color: white;
+font-size: 20px;
+color: black;
+}
+
+#modalSignin{
+background:#fff url("../../assets/sfondologin.jpg") no-repeat center center;
+background-size:cover;
+}
+
+#Login{
+    width: 380px;
+    margin-left: 5.5%;
+    display: inline-block;
+}
+#bottone {
+    background-color: #add8e6;
+}
+
+#accedi{
+    color: #add8e6;
+}
+
+#usertype {
+    margin-top: 5%;
 }

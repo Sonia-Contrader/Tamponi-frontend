@@ -1,10 +1,11 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AbstractService } from './abstractservice';
 import { UserDTO } from 'src/dto/userdto';
-import { HttpClient } from '@angular/common/http';
 import { LoginDTO } from 'src/dto/logindto';
 import { Observable } from 'rxjs';
 import { environment } from './../environments/environment';
+
 
 /**
  * I service sono decorati da @Injectable. 
@@ -22,7 +23,7 @@ export class UserService extends AbstractService<UserDTO>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.type = 'user';
+    this.type = 'micro1';
   }
 
   login(loginDTO: LoginDTO): Observable<UserDTO> {
